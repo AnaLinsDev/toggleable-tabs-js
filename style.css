@@ -6,18 +6,16 @@ body{
       );
       background-attachment: fixed;
       font-family: cursive;
-
 }
 .main{
   display: grid;
   grid-template-areas: 
-  "but but but"
-  "info info info";
+  "but"
+  "info";
   justify-content: center;
 }
 .tab {
   margin-top: 20vh;
-  overflow: hidden;
   background-color:transparent;
   text-align: center;
   width: 60vw;
@@ -29,11 +27,9 @@ body{
   grid-area: but;
   background-color:rgba(255, 255, 255, 0.4);
   float: left;
-  border-width: 0.5px ;
   border: 1px solid rgb(36, 36, 36);
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
   transition: 0.3s;
   font-size: 25px;
 }
@@ -45,13 +41,12 @@ body{
 }
 .tabcontent {
   grid-area: info;
-  width: 60vw;
+  width: 59.9vw;
   height: 30vh;
   display: none;
   border: 1px solid rgb(36, 36, 36);
   background-color:rgba(255, 255, 255, 0.4);
   justify-content: space-between;
-
 }
 .tabcontent button {
   background-color:transparent;
@@ -60,7 +55,7 @@ body{
   font-size: 30px;
   color: rgb(170, 5, 14);
   align-self: flex-start;
-  
+  cursor: pointer;
 }
 .tabcontent h3{
   padding-left: 10px;
